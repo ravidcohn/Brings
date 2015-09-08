@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Brings</string>
+    <string name="b_search">Search &#032; &#032;</string>
+    <string name="tv_name">Name</string>
+    <string name="tv_date">Date</string>
+    <string name="action_settings">Settings</string>
+</resources>
