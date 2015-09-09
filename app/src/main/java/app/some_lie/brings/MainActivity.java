@@ -11,18 +11,32 @@ import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ImageButton;
 import android.widget.ListView;
+import android.widget.SearchView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
+    private ImageButton ibAdd;
+    private TextView tvSearch;
+    private SearchView search;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        TextView tvSearch = (TextView)findViewById(R.id.tvSearch);
-        ImageButton ibAdd = (ImageButton)findViewById(R.id.ibAdd);
+        tvSearch = (TextView)findViewById(R.id.tvSearch);
+        ibAdd = (ImageButton)findViewById(R.id.ibAdd);
+        search = (SearchView)findViewById(R.id.searchView);
+        setOnClick();
+
+        tvSearch.setText("Search  ");
+        setList();
+    }
+
+    private void setOnClick(){
+
         final Intent new_event = new Intent(this,newEvent.class);
 
         ibAdd.setOnClickListener(new View.OnClickListener() {
@@ -30,14 +44,19 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivityForResult(new_event, 0);
+            }
+
+        });
+
+        tvSearch.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
 
             }
 
         });
 
-
-        tvSearch.setText("Search  ");
-        setList();
     }
 
     @Override
