@@ -1,23 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="1">
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="0.05">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Place"
-            android:id="@+id/Place_title"
+            android:text="@string/tv_place_title"
+            android:id="@+id/tv_place_title"
             android:layout_weight="0.05"
             android:layout_marginTop="41dp"
-            android:layout_below="@+id/Name_title"
+            android:layout_below="@+id/tv_name_title"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
 
@@ -25,8 +20,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Event Name"
-            android:id="@+id/Name_title"
+            android:text="@string/tv_name_title"
+            android:id="@+id/tv_name_title"
             android:layout_marginTop="27dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
@@ -36,22 +31,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Strat"
-            android:id="@+id/Start_title"
+            android:text="@string/tv_start_title"
+            android:id="@+id/tv_start_title"
             android:layout_marginTop="51dp"
-            android:layout_below="@+id/Place_title"
+            android:layout_below="@+id/tv_place_title"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_alignRight="@+id/Name_title"
-            android:layout_alignEnd="@+id/Name_title" />
+            android:layout_alignRight="@+id/tv_name_title"
+            android:layout_alignEnd="@+id/tv_name_title" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="End"
-            android:id="@+id/End_title"
-            android:layout_below="@+id/Start_title"
+            android:text="@string/tv_end_title"
+            android:id="@+id/tv_end_title"
+            android:layout_below="@+id/tv_start_title"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_marginTop="45dp" />
@@ -60,9 +55,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Description"
-            android:id="@+id/Description_title"
-            android:layout_below="@+id/End_title"
+            android:text="@string/tv_description_title"
+            android:id="@+id/tv_description_title"
+            android:layout_below="@+id/tv_end_title"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_marginTop="49dp" />
@@ -72,10 +67,10 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Medium Text"
-            android:id="@+id/Name_data"
-            android:layout_above="@+id/Place_title"
-            android:layout_toRightOf="@+id/Name_title"
-            android:layout_toEndOf="@+id/Name_title"
+            android:id="@+id/tv_name_data"
+            android:layout_above="@+id/tv_place_title"
+            android:layout_toRightOf="@+id/tv_name_title"
+            android:layout_toEndOf="@+id/tv_name_title"
             android:layout_marginLeft="62dp"
             android:layout_marginStart="62dp" />
 
@@ -84,20 +79,20 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Medium Text"
-            android:id="@+id/textView2"
-            android:layout_above="@+id/Start_title"
-            android:layout_alignRight="@+id/Name_data"
-            android:layout_alignEnd="@+id/Name_data" />
+            android:id="@+id/tv_place_data"
+            android:layout_above="@+id/tv_start_title"
+            android:layout_alignRight="@+id/tv_name_data"
+            android:layout_alignEnd="@+id/tv_name_data" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Medium Text"
-            android:id="@+id/Start_data"
-            android:layout_alignTop="@+id/Start_title"
-            android:layout_alignRight="@+id/textView2"
-            android:layout_alignEnd="@+id/textView2"
+            android:id="@+id/tv_start_data"
+            android:layout_alignTop="@+id/tv_start_title"
+            android:layout_alignRight="@+id/tv_place_data"
+            android:layout_alignEnd="@+id/tv_place_data"
             android:inputType="date" />
 
         <TextView
@@ -105,10 +100,10 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Medium Text"
-            android:id="@+id/End_data"
-            android:layout_above="@+id/Description_title"
-            android:layout_alignRight="@+id/Start_data"
-            android:layout_alignEnd="@+id/Start_data"
+            android:id="@+id/tv_end_data"
+            android:layout_above="@+id/tv_description_title"
+            android:layout_alignRight="@+id/tv_start_data"
+            android:layout_alignEnd="@+id/tv_start_data"
             android:inputType="date" />
 
         <TextView
@@ -116,10 +111,9 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Medium Text"
-            android:id="@+id/Description_data"
-            android:layout_alignTop="@+id/Description_title"
-            android:layout_alignRight="@+id/End_data"
-            android:layout_alignEnd="@+id/End_data" />
+            android:id="@+id/tv_description_data"
+            android:layout_alignTop="@+id/tv_description_title"
+            android:layout_alignRight="@+id/tv_end_data"
+            android:layout_alignEnd="@+id/tv_end_data" />
 
-    </RelativeLayout>
-</LinearLayout>
+</RelativeLayout>
