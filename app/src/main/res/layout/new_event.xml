@@ -132,7 +132,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/bt_pic_ui"
-            android:id="@+id/button"
+            android:id="@+id/bt_ne_pic_ui"
             android:layout_marginLeft="28dp"
             android:layout_marginStart="28dp"
             android:layout_alignTop="@+id/tv_ne_pic_tit"
