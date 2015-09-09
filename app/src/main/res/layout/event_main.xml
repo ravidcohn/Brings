@@ -13,7 +13,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Place"
+            android:text="@string/tv_place_title"
             android:id="@+id/Place_title"
             android:layout_weight="0.05"
             android:layout_marginTop="41dp"

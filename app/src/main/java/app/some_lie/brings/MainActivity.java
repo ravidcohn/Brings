@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         tvSearch = (TextView)findViewById(R.id.tvSearch);
         ibAdd = (ImageButton)findViewById(R.id.ibAdd);
+        search = (SearchView)findViewById(R.id.searchView);
         setOnClick();
 
         tvSearch.setText("Search  ");
