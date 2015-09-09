@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void setOnClick(){
 
-        final Intent new_event = new Intent(this,newEvent.class);
+        final Intent new_event = new Intent(this,tab.class);
 
         ibAdd.setOnClickListener(new View.OnClickListener() {
 
