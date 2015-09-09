@@ -17,6 +17,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".newEvent"/>
+
+        <!--  Tab -->
+        <activity android:name=".tab" />
+
     </application>
 
 </manifest>
