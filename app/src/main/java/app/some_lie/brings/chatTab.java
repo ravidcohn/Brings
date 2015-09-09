@@ -1,6 +1,6 @@
 package app.some_lie.brings;
 
-import android.app.Fragment;
+import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,7 +15,7 @@ public class chatTab extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View v = inflater.inflate(R.layout.event_main, container, false);
+        View v = inflater.inflate(R.layout.event_chat, container, false);
         return v;
     }
 }

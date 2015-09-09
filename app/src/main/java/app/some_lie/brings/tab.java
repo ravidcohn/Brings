@@ -1,10 +1,8 @@
 package app.some_lie.brings;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTabHost;
-import android.widget.TabHost;
 
 /**
  * Created by pinhas on 09/09/2015.
@@ -18,8 +16,8 @@ public class tab extends FragmentActivity {
         setContentView(R.layout.event_tab);
 
 
-        mTabHost = (FragmentTabHost)findViewById(android.R.id.tabhost);
-        mTabHost.setup(this, getSupportFragmentManager(), R.id.realtabcontent);
+        mTabHost = (FragmentTabHost) findViewById(android.R.id.tabhost);
+        mTabHost.setup(this, getSupportFragmentManager(), android.R.id.tabcontent);
 
 
         mTabHost.addTab(mTabHost.newTabSpec("Main").setIndicator("Main"),
