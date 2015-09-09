@@ -139,5 +139,14 @@
             android:layout_toRightOf="@+id/tv_ne_description_ui"
             android:layout_toEndOf="@+id/tv_ne_description_ui" />
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bt_create_event_ui"
+            android:id="@+id/tv_ne_create_event_ui"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/tv_ne_description_ui"
+            android:layout_alignStart="@+id/tv_ne_description_ui" />
+
     </RelativeLayout>
 </LinearLayout>
