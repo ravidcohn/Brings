@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-
+                search.setIconified(false);
             }
 
         });
@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setList() {//TODO
-        final ListView listview = (ListView) findViewById(R.id.listView);
+        final ListView listview = (ListView) findViewById(R.id.lvMain);
         listview.setClickable(true);
     }
 
