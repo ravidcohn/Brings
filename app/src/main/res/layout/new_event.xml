@@ -155,8 +155,7 @@
             android:layout_toRightOf="@+id/bt_ne_create_event_ui"
             android:layout_toEndOf="@+id/bt_ne_create_event_ui"
             android:layout_below="@+id/tv_ne_description_ui"
-            android:layout_alignBottom="@+id/tv_ne_pic_tit"
-            android:src="#70ff61" />
+            android:layout_alignBottom="@+id/tv_ne_pic_tit" />
 
     </RelativeLayout>
 </LinearLayout>
