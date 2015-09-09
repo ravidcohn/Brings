@@ -3,4 +3,55 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:id="@+id/ly_etd">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/tv_checked_title"
+            android:id="@+id/tv_etd_checkd_tit"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/tv_etd_checkd_count"
+            android:layout_toStartOf="@+id/tv_etd_checkd_count" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/tv_unchecked_title"
+            android:id="@+id/tv_etd_uncheckd_tit"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/tv_etd_checkd_count"
+            android:layout_toEndOf="@+id/tv_etd_checkd_count" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="0"
+            android:id="@+id/tv_etd_checkd_count"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="0"
+            android:id="@+id/tv_etd_uncheckd_count"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/tv_etd_uncheckd_tit"
+            android:layout_toEndOf="@+id/tv_etd_uncheckd_tit" />
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView3" />
 </LinearLayout>

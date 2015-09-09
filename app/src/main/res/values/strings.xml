@@ -16,4 +16,7 @@
 
     <string name="tv_attending_name">Name</string>
 
+    <string name="tv_checked_title">Checked:</string>
+    <string name="tv_unchecked_title">Unchecked:</string>
+
 </resources>
