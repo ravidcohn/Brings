@@ -29,7 +29,7 @@ public class newEvent extends Activity {
     private TextView tv_ne_start_ui;
     private TextView tv_ne_end_ui;
     private TextView tv_ne_description_ui;
-    private ImageView tv_ne_image_view_ui;
+    private ImageView iv_ne_pic_ui;
     private Button bt_ne_pic_ui;
     private Button bt_ne_create_event_ui;
 
@@ -43,7 +43,7 @@ public class newEvent extends Activity {
         tv_ne_end_ui = (TextView)findViewById(R.id.tv_ne_end_ui);
         tv_ne_description_ui = (TextView)findViewById(R.id.tv_ne_description_ui);
 
-        tv_ne_image_view_ui = (ImageView)findViewById(R.id.tv_ne_image_view_ui);
+        iv_ne_pic_ui = (ImageView)findViewById(R.id.iv_ne_pic_ui);
 
         bt_ne_pic_ui = (Button)findViewById(R.id.bt_ne_pic_ui);
         bt_ne_create_event_ui = (Button)findViewById(R.id.bt_ne_create_event_ui);
@@ -69,8 +69,7 @@ public class newEvent extends Activity {
 
             @Override
             public void onClick(View v) {
-                Intent intent = new   Intent(Intent.ACTION_PICK,android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-                startActivityForResult(intent, 1);
+
             }
 
         });
@@ -90,7 +89,7 @@ public class newEvent extends Activity {
                 c.close();
                 Bitmap thumbnail = (BitmapFactory.decodeFile(picturePath));
                 //Log.w("path of image from gallery......******************.........", picturePath + "");
-                tv_ne_image_view_ui.setImageBitmap(thumbnail);
+                iv_ne_pic_ui.setImageBitmap(thumbnail);
             }else if(requestCode == 1){
 
             }
